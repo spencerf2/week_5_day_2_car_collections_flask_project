@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+  <!-- Header Section -->
+  <header class="row text-white">
+    <div class="col-12 col-md-6" id="header-text">
+      <h2>You're needed in building the future of car collecting</h2>
+      <h5>A simple car collecting API tool for developers.</h5>
+      <div>
+        <button class="btn btn-secondary" id="community-button-docs">View Our Docs</button>
+        <button class="btn btn-secondary" id="community-button-slack">Join Our Slack</button>
+      </div>
+    </div>
+    <!-- Header Image -->
+    <div class="col-12 col-md-6">
+      <img src="../../static/images/undraw_Businesswoman_re_5n6b.svg" alt="Hero Header Image" class="header-image">
+    </div>
+  </header>
+  <!-- End Header Section -->
+
+  <!-- Starting Middle Section -->
+  <section class="row">
+    <div class="col-12 text-white" id="middle-text">
+      <h2>Let's see your collection!</h2>
+      <p>Expand your collection through the power of an API</p>
+    </div>
+  </section>
+  <!-- End of Middle Section -->
+
+  <!-- Collection of Features Section -->
+  <section class="row text-white" id="features-section">
+    <div class="col-12 col-md-4">
+      <img src="../../static/images/undraw_connected_world_wuay.svg" alt="connected-world-image" id="connected-world-image">
+      <h4>API Routes</h4>
+      <p>
+        A tradtional API route to help you find car specs.
+      </p>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <img src="../../static/images/undraw_Server_re_twwj.svg" alt="server-image" id="server-image">
+      <h4>Powered by PostgreSQL</h4>
+      <p>
+        All that heavenly data from one endpoint!
+      </p>
+    </div>
+    
+    <div class="col-12 col-md-4">
+      <img src="../../static/images/undraw_Setup_analytics_re_foim.svg" alt="analytics-image" id="analytics-image">
+      <h4>Analyze!</h4>
+      <p>
+        Use our powerful tools to analyze data. Find all the car specs you've been looking for.
+      </p>
+    </div>
+  </section>
+  <!-- End of Collection of Features Section -->
+
+  <!-- Community Section -->
+  <section class="row text-white">
+    <div class="col-12 col-md-6">
+      <img src="../../static/images/undraw_social_girl_562b.svg" alt="social-image" id="social-image">
+    </div>
+    <div class="col-12 col-md-6">
+      <h4>Talk with like minded car collectors!</h4>
+          <p>
+              Collaberate with people from all over the world.
+              Look at the data, make decisions, discuss.  Join our slack channel and give
+              a star on the Github project!
+          </p>
+          <div>
+              <button class="btn btn-secondary" id="community-button-github">View the Github</button>
+              <button class="btn btn-secondary" id="community-button-slack">Join Us on Slack!</button>
+          </div>
+    </div>
+  </section>
+  <!-- End of Community Section -->
+
+  <!-- Start of Footer -->
+  <footer class="row text-secondary" id="footer">
+    <div class="col-2 col-md-2">
+      <img src="../static/images/car_collections_logo.png" alt="Coding Drones Logo" id="footer-logo">
+    </div>
+    <div class="col-2 col-md-2">
+      <div class="footer-text-flex">
+        <a href="{{ url_for('site.home') }}">
+          <h4>The Car Collection Project</h4>
+        </a>
+      </div>
+    </div>
+    <div class="col-2 col-md-2">
+      <div class="footer-text-flex">
+        <h4>Donate</h4>
+      </div>
+    </div>
+    <div class="col-2 col-md-2">
+      <div class="footer-text-flex">
+        <a href="{{ url_for('site.home') }}">
+          <h4>Profile</h4>
+        </a>
+      </div>
+    </div>
+    <div class="col-2 col-md-2">
+      <div class="footer-text-flex">
+        <h4>Spread The Word</h4>
+      </div>
+    </div>
+    <div class="col-2 col-md-2">
+      <div class="footer-text-flex">
+        <h4>Our Process</h4>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+</div>
+
+{% endblock content %}

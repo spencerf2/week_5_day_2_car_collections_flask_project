@@ -1,0 +1,6 @@
+car_env
+.env
+__pycache__
+app.db
+migrations
+.vscode
