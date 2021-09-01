@@ -1,5 +1,6 @@
 car_env
 .env
+env
 __pycache__
 app.db
 migrations

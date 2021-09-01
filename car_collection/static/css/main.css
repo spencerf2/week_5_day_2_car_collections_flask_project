@@ -148,3 +148,10 @@ ul#horizontal-list a li:hover {
   color: white;
 }
 /* End Profile Styles Section */
+
+/* Start Signup Page */
+.signup-container {
+  height: 80vh;
+  padding: 13% 17%;
+}
+/* End Signup Page */
